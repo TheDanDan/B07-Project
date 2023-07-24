@@ -15,9 +15,13 @@ public class ActivityAccountType extends AppCompatActivity {
 
     public void onClickCreateShopper(View view) {
         // to do
+        // open ref Shopper
     }
 
     public void onClickCreateOwner(View view) {
         // to do
+        // open ref to Owner
     }
+
+    // adding ppl method
 }
