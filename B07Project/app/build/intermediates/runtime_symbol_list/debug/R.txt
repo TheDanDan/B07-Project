@@ -2600,7 +2600,8 @@ int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
 int id buttonCreateOwner 0x7f0801e6
 int id buttonCreateShopper 0x7f0801e7
-int id buttonLogin 0x7f080063
+int id buttonLoginOwner 0x7f0801e8
+int id buttonLoginShopper 0x7f0801e9
 int id buttonPanel 0x7f080064
 int id buttonSignupPage 0x7f0801df
 int id cache_measures 0x7f080065
@@ -2677,9 +2678,7 @@ int id easeInOut 0x7f0800ab
 int id easeOut 0x7f0800ac
 int id east 0x7f0800ad
 int id editTextPassword 0x7f0800ae
-int id editTextPasswordSignup 0x7f0801e0
 int id editTextUsername 0x7f0800af
-int id editTextUsernameSignup 0x7f0801e1
 int id edit_query 0x7f0800b0
 int id elastic 0x7f0800b1
 int id end 0x7f0800b2
@@ -2934,9 +2933,7 @@ int id textSpacerNoTitle 0x7f0801ab
 int id textStart 0x7f0801ac
 int id textTop 0x7f0801ad
 int id textViewPassword 0x7f0801e2
-int id textViewPasswordSignup 0x7f0801e3
 int id textViewUsername 0x7f0801e4
-int id textViewUsernameSignup 0x7f0801e5
 int id text_input_end_icon 0x7f0801af
 int id text_input_error_icon 0x7f0801b0
 int id text_input_start_icon 0x7f0801b1
@@ -3071,7 +3068,12 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_account_type 0x7f0b001c
+int layout activity_create_owner 0x7f0b0075
+int layout activity_create_shopper 0x7f0b0076
+int layout activity_creater_owner 0x7f0b0077
 int layout activity_login_page 0x7f0b001d
+int layout activity_owner_view1 0x7f0b0078
+int layout activity_shopper_view1 0x7f0b0079
 int layout custom_dialog 0x7f0b001e
 int layout design_bottom_navigation_item 0x7f0b001f
 int layout design_bottom_sheet_dialog 0x7f0b0020

@@ -1,5 +1,37 @@
 [
     {
+        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.b07project.app-merged_res-28:/layout_activity_owner_view1.xml.flat",
+        "source": "com.example.b07project.app-main-30:/layout/activity_owner_view1.xml"
+    },
+    {
+        "merged": "com.example.b07project.app-merged_res-28:/layout_activity_create_shopper.xml.flat",
+        "source": "com.example.b07project.app-main-30:/layout/activity_create_shopper.xml"
+    },
+    {
+        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
         "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -8,8 +40,8 @@
         "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\layout\\activity_account_type.xml"
     },
     {
-        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.b07project.app-merged_res-28:/layout_activity_create_owner.xml.flat",
+        "source": "com.example.b07project.app-main-30:/layout/activity_create_owner.xml"
     },
     {
         "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\drawable_ic_launcher_background.xml.flat",
@@ -18,10 +50,6 @@
     {
         "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\xml\\data_extraction_rules.xml"
     },
     {
         "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -52,27 +80,23 @@
         "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\xml\\backup_rules.xml"
+        "merged": "com.example.b07project.app-merged_res-28:/layout_activity_account_type.xml.flat",
+        "source": "com.example.b07project.app-main-30:/layout/activity_account_type.xml"
     },
     {
         "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "com.example.b07project.app-merged_res-28:/layout_activity_creater_owner.xml.flat",
+        "source": "com.example.b07project.app-main-30:/layout/activity_creater_owner.xml"
+    },
+    {
         "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\layout_activity_login_page.xml.flat",
         "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\layout\\activity_login_page.xml"
     },
     {
-        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-merged_res-28:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\janan\\.gradle\\daemon\\8.0\\com.example.b07project.app-main-30:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.b07project.app-merged_res-28:/layout_activity_shopper_view1.xml.flat",
+        "source": "com.example.b07project.app-main-30:/layout/activity_shopper_view1.xml"
     }
 ]

@@ -2,8 +2,10 @@ package com.example.b07project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class ActivityAccountType extends AppCompatActivity {
 
@@ -14,13 +16,32 @@ public class ActivityAccountType extends AppCompatActivity {
     }
 
     public void onClickCreateShopper(View view) {
-        // to do
-        // open ref Shopper
+        Button button = (Button) findViewById(R.id.buttonCreateShopper);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCreateShopper();
+            }
+        });
+    }
+
+    public void openCreateShopper() {
+        Intent intent = new Intent(this, ActivityCreateShopper.class);
+        startActivity(intent);
     }
 
     public void onClickCreateOwner(View view) {
-        // to do
-        // open ref to Owner
+        Button button = (Button) findViewById(R.id.buttonCreateOwner);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCreateOwner();
+            }
+        });
+    }
+    public void openCreateOwner() {
+        Intent intent = new Intent(this, ActivityCreateOwner.class);
+        startActivity(intent);
     }
 
     // adding ppl method
