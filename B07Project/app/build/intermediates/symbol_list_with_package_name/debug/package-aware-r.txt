@@ -2933,6 +2933,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView2
+id textView3
 id textViewPassword
 id textViewUsername
 id text_input_end_icon

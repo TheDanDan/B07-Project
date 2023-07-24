@@ -2,46 +2,40 @@ package com.example.b07project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
 
 public class ActivityAccountType extends AppCompatActivity {
+    TextView textView2;
 
+    EditText usernameInput;
+    EditText passwordInput;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_type);
+
+        usernameInput = (EditText) findViewById(R.id.editTextUsernameSignup);
+        passwordInput = (EditText) findViewById(R.id.editTextPasswordSignup);
     }
 
     public void onClickCreateShopper(View view) {
-        Button button = (Button) findViewById(R.id.buttonCreateShopper);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openCreateShopper();
-            }
-        });
-    }
+        // to do
+        // open ref Shopper
+        // put products under user in the firebase
+        // Retrieve the username and password input
 
-    public void openCreateShopper() {
-        Intent intent = new Intent(this, ActivityCreateShopper.class);
-        startActivity(intent);
+        textView2.setText(usernameInput.getText());
+        System.out.println("Button clicked");
+
     }
 
     public void onClickCreateOwner(View view) {
-        Button button = (Button) findViewById(R.id.buttonCreateOwner);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openCreateOwner();
-            }
-        });
-    }
-    public void openCreateOwner() {
-        Intent intent = new Intent(this, ActivityCreateOwner.class);
-        startActivity(intent);
+        // to do
+        // open ref to Owner
     }
 
     // adding ppl method
