@@ -10,85 +10,167 @@
 9        android:targetSdkVersion="33" />
 9-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml
 10
-11    <permission
-11-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.b07project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.example.b07project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:5:5-27:19
-18        android:allowBackup="true"
-18-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:9:9-43
-25        android:label="@string/app_name"
-25-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.B07Project" >
-29-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:13:9-48
-30        <activity
-30-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:15:9-17:40
-31            android:name="com.example.b07project.ActivityAccountType"
-31-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:16:13-48
-32            android:exported="false" />
-32-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:17:13-37
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:4:5-66
+11-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:5:5-78
+12-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:5:22-76
+13
+14    <permission
+14-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.b07project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.b07project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:7:5-44:19
+21        android:allowBackup="true"
+21-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.9.0] C:\Users\rpan\.gradle\caches\transforms-3\57c95f7bce2a4c36ea305cb3932f8371\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:9:9-65
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:fullBackupContent="@xml/backup_rules"
+26-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:10:9-54
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:11:9-43
+28        android:label="@string/app_name"
+28-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:12:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:13:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:14:9-35
+31        android:testOnly="true"
+32        android:theme="@style/Theme.B07Project" >
+32-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:15:9-48
 33        <activity
-33-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:18:9-26:20
-34            android:name="com.example.b07project.ActivityLoginPage"
-34-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:19:13-46
-35            android:exported="true" >
-35-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:20:13-36
-36            <intent-filter>
-36-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:21:13-25:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:22:17-69
-37-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:22:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:24:17-77
-39-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:24:27-74
-40            </intent-filter>
-41        </activity>
-42
-43        <provider
-43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-44            android:name="androidx.startup.InitializationProvider"
-44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-45            android:authorities="com.example.b07project.androidx-startup"
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-46            android:exported="false" >
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-47            <meta-data
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-48                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-49                android:value="androidx.startup" />
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-50            <meta-data
-50-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rpan\.gradle\caches\transforms-3\75d35fda4271de3dc184847093d1a2b0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-51                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-51-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rpan\.gradle\caches\transforms-3\75d35fda4271de3dc184847093d1a2b0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-52                android:value="androidx.startup" />
-52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rpan\.gradle\caches\transforms-3\75d35fda4271de3dc184847093d1a2b0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-53        </provider>
-54    </application>
-55
-56</manifest>
+33-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:17:9-19:40
+34            android:name="com.example.b07project.ActivityOwnerView1"
+34-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:18:13-47
+35            android:exported="false" />
+35-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:19:13-37
+36        <activity
+36-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:20:9-22:40
+37            android:name="com.example.b07project.ActivityShopperView1"
+37-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:21:13-49
+38            android:exported="false" />
+38-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:22:13-37
+39        <activity
+39-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:23:9-25:40
+40            android:name="com.example.b07project.ActivityCreateOwner"
+40-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:24:13-48
+41            android:exported="false" />
+41-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:25:13-37
+42        <activity
+42-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:26:9-28:40
+43            android:name="com.example.b07project.ActivityOwnerSignup"
+43-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:27:13-48
+44            android:exported="false" />
+44-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:28:13-37
+45        <activity
+45-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:29:9-31:40
+46            android:name="com.example.b07project.ActivityCreateShopper"
+46-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:30:13-50
+47            android:exported="false" />
+47-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:31:13-37
+48        <activity
+48-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:32:9-34:40
+49            android:name="com.example.b07project.ActivityAccountType"
+49-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:33:13-48
+50            android:exported="false" />
+50-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:34:13-37
+51        <activity
+51-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:35:9-43:20
+52            android:name="com.example.b07project.ActivityLoginPage"
+52-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:36:13-46
+53            android:exported="true" >
+53-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:37:13-36
+54            <intent-filter>
+54-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:38:13-42:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:39:17-69
+55-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:39:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:41:17-77
+57-->C:\Users\rpan\Documents\GitHub\B07-Project\B07Project\app\src\main\AndroidManifest.xml:41:27-74
+58            </intent-filter>
+59        </activity>
+60
+61        <service
+61-->[com.google.firebase:firebase-database:20.1.0] C:\Users\rpan\.gradle\caches\transforms-3\cb1822309c51a0f744fd512e58602ad1\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+62            android:name="com.google.firebase.components.ComponentDiscoveryService"
+62-->[com.google.firebase:firebase-database:20.1.0] C:\Users\rpan\.gradle\caches\transforms-3\cb1822309c51a0f744fd512e58602ad1\transformed\firebase-database-20.1.0\AndroidManifest.xml:29:13-84
+63            android:directBootAware="true"
+63-->[com.google.firebase:firebase-common:20.2.0] C:\Users\rpan\.gradle\caches\transforms-3\a04a61fa20c3292f8c70c08012d83d43\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+64            android:exported="false" >
+64-->[com.google.firebase:firebase-database:20.1.0] C:\Users\rpan\.gradle\caches\transforms-3\cb1822309c51a0f744fd512e58602ad1\transformed\firebase-database-20.1.0\AndroidManifest.xml:30:13-37
+65            <meta-data
+65-->[com.google.firebase:firebase-database:20.1.0] C:\Users\rpan\.gradle\caches\transforms-3\cb1822309c51a0f744fd512e58602ad1\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+66                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+66-->[com.google.firebase:firebase-database:20.1.0] C:\Users\rpan\.gradle\caches\transforms-3\cb1822309c51a0f744fd512e58602ad1\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+67                android:value="com.google.firebase.components.ComponentRegistrar" />
+67-->[com.google.firebase:firebase-database:20.1.0] C:\Users\rpan\.gradle\caches\transforms-3\cb1822309c51a0f744fd512e58602ad1\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+68        </service>
+69
+70        <activity
+70-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rpan\.gradle\caches\transforms-3\7fa3c6045f0b287b53c04bc4f22591af\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+71            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+71-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rpan\.gradle\caches\transforms-3\7fa3c6045f0b287b53c04bc4f22591af\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+72            android:exported="false"
+72-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rpan\.gradle\caches\transforms-3\7fa3c6045f0b287b53c04bc4f22591af\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+73-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rpan\.gradle\caches\transforms-3\7fa3c6045f0b287b53c04bc4f22591af\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+74
+75        <provider
+75-->[com.google.firebase:firebase-common:20.2.0] C:\Users\rpan\.gradle\caches\transforms-3\a04a61fa20c3292f8c70c08012d83d43\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+76            android:name="com.google.firebase.provider.FirebaseInitProvider"
+76-->[com.google.firebase:firebase-common:20.2.0] C:\Users\rpan\.gradle\caches\transforms-3\a04a61fa20c3292f8c70c08012d83d43\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+77            android:authorities="com.example.b07project.firebaseinitprovider"
+77-->[com.google.firebase:firebase-common:20.2.0] C:\Users\rpan\.gradle\caches\transforms-3\a04a61fa20c3292f8c70c08012d83d43\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:20.2.0] C:\Users\rpan\.gradle\caches\transforms-3\a04a61fa20c3292f8c70c08012d83d43\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+79            android:exported="false"
+79-->[com.google.firebase:firebase-common:20.2.0] C:\Users\rpan\.gradle\caches\transforms-3\a04a61fa20c3292f8c70c08012d83d43\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+80            android:initOrder="100" />
+80-->[com.google.firebase:firebase-common:20.2.0] C:\Users\rpan\.gradle\caches\transforms-3\a04a61fa20c3292f8c70c08012d83d43\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+81
+82        <meta-data
+82-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\rpan\.gradle\caches\transforms-3\49ce6122932f5285b401f570e61a56b9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+83            android:name="com.google.android.gms.version"
+83-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\rpan\.gradle\caches\transforms-3\49ce6122932f5285b401f570e61a56b9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+84            android:value="@integer/google_play_services_version" />
+84-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\rpan\.gradle\caches\transforms-3\49ce6122932f5285b401f570e61a56b9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+85
+86        <provider
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+87            android:name="androidx.startup.InitializationProvider"
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+88            android:authorities="com.example.b07project.androidx-startup"
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+89            android:exported="false" >
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+90            <meta-data
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+91                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+92                android:value="androidx.startup" />
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rpan\.gradle\caches\transforms-3\eb88012741a64135b462a95b61c1572e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+93            <meta-data
+93-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rpan\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+94                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rpan\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+95                android:value="androidx.startup" />
+95-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rpan\.gradle\caches\transforms-3\c7a191cd82385db201399497594f5497\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+96        </provider>
+97    </application>
+98
+99</manifest>
