@@ -3,6 +3,7 @@ package com.example.b07project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -60,18 +61,18 @@ public class ActivityAccountType extends AppCompatActivity {
 
         if (username.length() == 0 || password.length() == 0) {
             Toast.makeText(ActivityAccountType.this, "You must enter a username or password!", Toast.LENGTH_SHORT).show();
+            return;
         }
-
+        checkExists(username);
         ref.addValueEventListener(new ValueEventListener() {
+
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (username.length() == 0 || password.length() == 0) {
-                    throw new RuntimeException();
-                }
                 ref.child(username).child("password").setValue(password);
-                Toast.makeText(ActivityAccountType.this, "data added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActivityAccountType.this, "Your account has been made!", Toast.LENGTH_SHORT).show();
                 usernameInput.getText().clear();
                 passwordInput.getText().clear();
+                return;
             }
 
             @Override
@@ -107,15 +108,37 @@ public class ActivityAccountType extends AppCompatActivity {
 
         if (username.length() == 0 || password.length() == 0) {
             Toast.makeText(ActivityAccountType.this, "You must enter a username or password!", Toast.LENGTH_SHORT).show();
+            return;
         }
+
+        checkExists(username);
 
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 ref.child(username).child("password").setValue(password);
-                Toast.makeText(ActivityAccountType.this, "data added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActivityAccountType.this, "Your account has been made!", Toast.LENGTH_SHORT).show();
                 usernameInput.getText().clear();
                 passwordInput.getText().clear();
+                return;
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(ActivityAccountType.this, "Fail to add data " + error, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void checkExists(String username) {
+        ref.orderByKey().equalTo(username).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    Toast.makeText(ActivityAccountType.this, "Your account already exists!", Toast.LENGTH_SHORT).show();
+                    throw new RuntimeException();
+                }
+
             }
 
             @Override
@@ -125,3 +148,4 @@ public class ActivityAccountType extends AppCompatActivity {
         });
     }
 }
+
