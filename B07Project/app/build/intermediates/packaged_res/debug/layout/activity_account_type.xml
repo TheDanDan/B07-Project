@@ -88,8 +88,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="141dp" />
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="44dp"
+        android:text="Welcome! Please enter a username and password."
+        android:textAlignment="textStart"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
