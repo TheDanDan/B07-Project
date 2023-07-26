@@ -2980,6 +2980,7 @@ id textStart
 id textTop
 id textView2
 id textView3
+id textViewErrorMsg
 id textViewPassword
 id textViewPasswordSignup
 id textViewUsername
@@ -3120,9 +3121,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_account_type
-layout activity_create_owner
-layout activity_create_shopper
-layout activity_creater_owner
 layout activity_login_page
 layout activity_owner_view1
 layout activity_shopper_view1

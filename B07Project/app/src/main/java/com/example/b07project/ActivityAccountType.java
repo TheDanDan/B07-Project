@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -50,6 +51,7 @@ public class ActivityAccountType extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 insertShopper();
+
             }
         });
 
@@ -72,6 +74,7 @@ public class ActivityAccountType extends AppCompatActivity {
                 Toast.makeText(ActivityAccountType.this, "Your account has been made!", Toast.LENGTH_SHORT).show();
                 usernameInput.getText().clear();
                 passwordInput.getText().clear();
+                openActivity(ActivityShopperView1.class);
                 return;
             }
 
@@ -120,6 +123,7 @@ public class ActivityAccountType extends AppCompatActivity {
                 Toast.makeText(ActivityAccountType.this, "Your account has been made!", Toast.LENGTH_SHORT).show();
                 usernameInput.getText().clear();
                 passwordInput.getText().clear();
+                openActivity(ActivityOwnerView1.class);
                 return;
             }
 
@@ -146,6 +150,11 @@ public class ActivityAccountType extends AppCompatActivity {
                 Toast.makeText(ActivityAccountType.this, "Fail to add data " + error, Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void openActivity(Class<?> cls) {
+        Intent intent = new Intent(this, cls);
+        startActivity(intent);
     }
 }
 

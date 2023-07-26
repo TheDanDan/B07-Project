@@ -16,7 +16,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-//import com.google.firebase.database.*;
 
 public class ActivityLoginPage extends AppCompatActivity {
 
@@ -34,14 +33,9 @@ public class ActivityLoginPage extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openActivityAccountType();
+                openActivity(ActivityAccountType.class);
             }
         });
-    }
-
-    public void openActivityAccountType() {
-        Intent intent = new Intent(this, ActivityAccountType.class);
-        startActivity(intent);
     }
 
     public void onClickLoginShopper(View view) {
@@ -62,7 +56,7 @@ public class ActivityLoginPage extends AppCompatActivity {
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            openShopperView1();
+                            openActivity(ActivityShopperView1.class);
                         }
                     });
                 }
@@ -74,11 +68,6 @@ public class ActivityLoginPage extends AppCompatActivity {
                 writeInvalid();
             }
         });
-    }
-
-    public void openShopperView1() {
-        Intent intent = new Intent(this, ActivityShopperView1.class);
-        startActivity(intent);
     }
 
     public void onClickLoginOwner(View view) {
@@ -99,7 +88,7 @@ public class ActivityLoginPage extends AppCompatActivity {
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            openOwnerView1();
+                            openActivity(ActivityOwnerView1.class);
                         }
                     });
                 }
@@ -113,11 +102,10 @@ public class ActivityLoginPage extends AppCompatActivity {
         });
     }
 
-    public void openOwnerView1() {
-        Intent intent = new Intent(this, ActivityOwnerView1.class);
+    public void openActivity(Class<?> cls) {
+        Intent intent = new Intent(this, cls);
         startActivity(intent);
     }
-
     public void writeInvalid() {
         TextView msgError = (TextView) findViewById(R.id.textViewErrorMsg);
         msgError.setText("*Invalid Username or Password");

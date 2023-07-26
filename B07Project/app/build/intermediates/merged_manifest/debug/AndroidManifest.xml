@@ -8,10 +8,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="33" />
 
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <permission
         android:name="com.example.b07project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -39,13 +37,7 @@
             android:name="com.example.b07project.ActivityShopperView1"
             android:exported="false" />
         <activity
-            android:name="com.example.b07project.ActivityCreateOwner"
-            android:exported="false" />
-        <activity
             android:name="com.example.b07project.ActivityOwnerSignup"
-            android:exported="false" />
-        <activity
-            android:name="com.example.b07project.ActivityCreateShopper"
             android:exported="false" />
         <activity
             android:name="com.example.b07project.ActivityAccountType"

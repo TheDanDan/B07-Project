@@ -37,13 +37,7 @@
             android:name="com.example.b07project.ActivityShopperView1"
             android:exported="false" />
         <activity
-            android:name="com.example.b07project.ActivityCreateOwner"
-            android:exported="false" />
-        <activity
             android:name="com.example.b07project.ActivityOwnerSignup"
-            android:exported="false" />
-        <activity
-            android:name="com.example.b07project.ActivityCreateShopper"
             android:exported="false" />
         <activity
             android:name="com.example.b07project.ActivityAccountType"
