@@ -20,6 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 public class ActivityLoginPage extends AppCompatActivity {
 
     FirebaseDatabase db;
+    static String username; //used for passing username between activities
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,7 @@ public class ActivityLoginPage extends AppCompatActivity {
         DatabaseReference ref = db.getReference();
         EditText userUsername = (EditText) findViewById(R.id.editTextUsername);
         EditText userPassword = (EditText) findViewById(R.id.editTextPassword);
-        String username = userUsername.getText().toString();
+        username = userUsername.getText().toString(); //NOTE: username updates the static variable
         String password = userPassword.getText().toString(); //parse both username and password into strings
 
         //get a snapshot of the database that checks if the given username exists (and extend to password for ease)
@@ -60,12 +61,13 @@ public class ActivityLoginPage extends AppCompatActivity {
                         }
                     });
                 }
-                writeInvalid(); //otherwise give message that something is wrong
+                else {
+                    writeInvalid(); //otherwise give message that something is wrong
+                }
 
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                writeInvalid();
             }
         });
     }
@@ -74,7 +76,7 @@ public class ActivityLoginPage extends AppCompatActivity {
         DatabaseReference ref = db.getReference();
         EditText userUsername = (EditText) findViewById(R.id.editTextUsername);
         EditText userPassword = (EditText) findViewById(R.id.editTextPassword);
-        String username = userUsername.getText().toString();
+        username = userUsername.getText().toString(); //NOTE: username updates the static variable
         String password = userPassword.getText().toString(); //parse both username and password into strings
 
         //get a snapshot of the database that checks if the given username exists (and extend to password for ease)
@@ -92,18 +94,20 @@ public class ActivityLoginPage extends AppCompatActivity {
                         }
                     });
                 }
-                writeInvalid(); //otherwise give message that something is wrong
+                else {
+                    writeInvalid(); //otherwise give message that something is wrong
+                }
 
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                writeInvalid();
             }
         });
     }
 
     public void openActivity(Class<?> cls) {
         Intent intent = new Intent(this, cls);
+        intent.putExtra("KEY_USERNAME",  username); //pass static username to next
         startActivity(intent);
     }
     public void writeInvalid() {

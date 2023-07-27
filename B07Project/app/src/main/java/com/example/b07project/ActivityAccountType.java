@@ -27,6 +27,7 @@ public class ActivityAccountType extends AppCompatActivity {
     Button btnInsertData;
     DatabaseReference ref;
     FirebaseDatabase firebaseDatabase;
+    static String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +59,7 @@ public class ActivityAccountType extends AppCompatActivity {
     }
 
     private void insertShopper() {
-        String username = usernameInput.getText().toString();
+        username = usernameInput.getText().toString();
         String password = passwordInput.getText().toString();
 
         if (username.length() == 0 || password.length() == 0) {
@@ -106,7 +107,7 @@ public class ActivityAccountType extends AppCompatActivity {
     }
 
     private void insertOwner() {
-        String username = usernameInput.getText().toString();
+        username = usernameInput.getText().toString();
         String password = passwordInput.getText().toString();
 
         if (username.length() == 0 || password.length() == 0) {
@@ -154,6 +155,7 @@ public class ActivityAccountType extends AppCompatActivity {
 
     public void openActivity(Class<?> cls) {
         Intent intent = new Intent(this, cls);
+        intent.putExtra("KEY_USERNAME",  username); //pass static username to next
         startActivity(intent);
     }
 }
