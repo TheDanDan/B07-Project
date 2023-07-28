@@ -5,17 +5,24 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.example.b07project.databinding.ActivityShopperView1Binding;
 
 public class ActivityShopperView1 extends AppCompatActivity {
 
+    static String username; //will be passed from previous activity
     ActivityShopperView1Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent receiverIntent = getIntent(); //These lines receive the string from previous activity
+        username = receiverIntent.getStringExtra("KEY_USERNAME"); //AND update username to match
+
         binding = ActivityShopperView1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
