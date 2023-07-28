@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.b07project.app-mergeDebugResources-30:/values-v23/values-v23.xml",
+            "outputFile": "com.example.b07project.app-mergeDebugResources-32:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\janan\\.gradle\\caches\\transforms-3\\8b92cc820134bbfbe1e5046870368d45\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/alysa/.gradle/caches/transforms-3/8b92cc820134bbfbe1e5046870368d45/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\janan\\.gradle\\caches\\transforms-3\\ed0ff587a1864cda5e2e24ef58dfc0cd\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/alysa/Documents/GitHub/B07-Project/B07Project/app/src/main/res/values-v23/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "64",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "434"
+                    },
+                    "to": {
+                        "startLines": "53",
+                        "startColumns": "4",
+                        "startOffsets": "3382",
+                        "endLines": "58",
+                        "endColumns": "12",
+                        "endOffsets": "3702"
+                    }
+                },
+                {
+                    "source": "/Users/alysa/.gradle/caches/transforms-3/ed0ff587a1864cda5e2e24ef58dfc0cd/transformed/appcompat-1.6.1/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +53,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\janan\\.gradle\\caches\\transforms-3\\7a04553ca9af6ddbf476fcc7c860a00a\\transformed\\material-1.5.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/alysa/.gradle/caches/transforms-3/ed7ff4fa22bb3c954492aeb64bc2f1e1/transformed/material-1.9.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -44,12 +63,12 @@
                         "endOffsets": "266,476,796,1033,1240,1447,1650,1982,2184,2449,2722"
                     },
                     "to": {
-                        "startLines": "53,56,59,64,68,71,74,77,82,85,89",
+                        "startLines": "59,62,65,70,74,77,80,83,88,91,95",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3382,3598,3808,4128,4365,4572,4779,4982,5314,5516,5781",
-                        "endLines": "55,58,63,67,70,73,76,81,84,88,92",
+                        "startOffsets": "3707,3923,4133,4453,4690,4897,5104,5307,5639,5841,6106",
+                        "endLines": "61,64,69,73,76,79,82,87,90,94,98",
                         "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "3593,3803,4123,4360,4567,4774,4977,5309,5511,5776,6049"
+                        "endOffsets": "3918,4128,4448,4685,4892,5099,5302,5634,5836,6101,6374"
                     }
                 }
             ]

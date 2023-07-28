@@ -37,6 +37,9 @@ public final class ActivityLoginPageBinding implements ViewBinding {
   public final EditText editTextUsername;
 
   @NonNull
+  public final TextView textViewErrorMsg;
+
+  @NonNull
   public final TextView textViewPassword;
 
   @NonNull
@@ -45,14 +48,15 @@ public final class ActivityLoginPageBinding implements ViewBinding {
   private ActivityLoginPageBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button buttonLoginOwner, @NonNull Button buttonLoginShopper,
       @NonNull Button buttonSignupPage, @NonNull EditText editTextPassword,
-      @NonNull EditText editTextUsername, @NonNull TextView textViewPassword,
-      @NonNull TextView textViewUsername) {
+      @NonNull EditText editTextUsername, @NonNull TextView textViewErrorMsg,
+      @NonNull TextView textViewPassword, @NonNull TextView textViewUsername) {
     this.rootView = rootView;
     this.buttonLoginOwner = buttonLoginOwner;
     this.buttonLoginShopper = buttonLoginShopper;
     this.buttonSignupPage = buttonSignupPage;
     this.editTextPassword = editTextPassword;
     this.editTextUsername = editTextUsername;
+    this.textViewErrorMsg = textViewErrorMsg;
     this.textViewPassword = textViewPassword;
     this.textViewUsername = textViewUsername;
   }
@@ -114,6 +118,12 @@ public final class ActivityLoginPageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textViewErrorMsg;
+      TextView textViewErrorMsg = ViewBindings.findChildViewById(rootView, id);
+      if (textViewErrorMsg == null) {
+        break missingId;
+      }
+
       id = R.id.textViewPassword;
       TextView textViewPassword = ViewBindings.findChildViewById(rootView, id);
       if (textViewPassword == null) {
@@ -128,7 +138,7 @@ public final class ActivityLoginPageBinding implements ViewBinding {
 
       return new ActivityLoginPageBinding((ConstraintLayout) rootView, buttonLoginOwner,
           buttonLoginShopper, buttonSignupPage, editTextPassword, editTextUsername,
-          textViewPassword, textViewUsername);
+          textViewErrorMsg, textViewPassword, textViewUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

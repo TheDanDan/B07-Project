@@ -4,20 +4,28 @@ package com.example.b07project.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.b07project.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityOwnerView1Binding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityOwnerView1Binding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final TextView textViewWelcomeTestOwner;
+
+  private ActivityOwnerView1Binding(@NonNull ConstraintLayout rootView,
+      @NonNull TextView textViewWelcomeTestOwner) {
     this.rootView = rootView;
+    this.textViewWelcomeTestOwner = textViewWelcomeTestOwner;
   }
 
   @Override
@@ -43,10 +51,19 @@ public final class ActivityOwnerView1Binding implements ViewBinding {
 
   @NonNull
   public static ActivityOwnerView1Binding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.textViewWelcomeTestOwner;
+      TextView textViewWelcomeTestOwner = ViewBindings.findChildViewById(rootView, id);
+      if (textViewWelcomeTestOwner == null) {
+        break missingId;
+      }
 
-    return new ActivityOwnerView1Binding((ConstraintLayout) rootView);
+      return new ActivityOwnerView1Binding((ConstraintLayout) rootView, textViewWelcomeTestOwner);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

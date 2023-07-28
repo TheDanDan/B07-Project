@@ -2,6 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
     <string name="app_name">B07 Project</string>
     <string name="default_web_client_id" translatable="false">246445245937-fkic2767nfgth4475tp1lbfegams6nib.apps.googleusercontent.com</string>
     <string name="firebase_database_url" translatable="false">https://b07-project-3237a-default-rtdb.firebaseio.com</string>
@@ -11,6 +14,9 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDg2bSQ3yaDkLKqbUr2XOVAgYoKg-c4nYU</string>
     <string name="google_storage_bucket" translatable="false">b07-project-3237a.appspot.com</string>
     <string name="project_id" translatable="false">b07-project-3237a</string>
+    <string name="shopper_cart">this is the shopper\'s cart</string>
+    <string name="shopper_home">this is the shopper\'s home page</string>
+    <string name="shopper_search">this is the shopper\'s search page</string>
     <style name="Base.Theme.B07Project" parent="Theme.Material3.DayNight.NoActionBar">
         
         
