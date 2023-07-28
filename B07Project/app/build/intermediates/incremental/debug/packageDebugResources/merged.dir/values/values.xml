@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <string name="app_name">B07 Project</string>
+    <string name="shopper_cart">this is the shopper\'s cart</string>
+    <string name="shopper_home">this is the shopper\'s home page</string>
+    <string name="shopper_search">this is the shopper\'s search page</string>
+    <style name="Base.Theme.B07Project" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.B07Project" parent="Base.Theme.B07Project"/>
+</resources>
