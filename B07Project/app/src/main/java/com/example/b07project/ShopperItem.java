@@ -13,7 +13,7 @@ public class ShopperItem {
         return false;
     }
 
-    public boolean addToCart(long id, int quantity, String username) {
+    public boolean addToCart(String id, int quantity, String username) {
         // add item associated with id to database if not already there
         // if already there, increase quantity of item
         return false;

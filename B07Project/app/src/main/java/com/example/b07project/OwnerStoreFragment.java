@@ -5,10 +5,14 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -49,6 +53,9 @@ public class OwnerStoreFragment extends Fragment {
     }
 
     String username;
+    Button btnAddItem;
+    EditText name, price, description;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,12 +71,47 @@ public class OwnerStoreFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_owner_store, container, false);
+
         username = this.getArguments().getString("username");
 
+        btnAddItem = view.findViewById(R.id.buttonAddItem);
+        name = view.findViewById(R.id.itemName);
+        price = view.findViewById(R.id.itemPrice);
+        description = view.findViewById(R.id.itemDescription);
+
+        btnAddItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addToStore();
+            }
+        });
         // for testing, could access username
         // TextView msgWelcome = (TextView) view.findViewById(R.id.test);
         // msgWelcome.setText("Welcome " + username + "!");
 
         return view;
+    }
+
+    private void addToStore() {
+        String itemName = name.getText().toString();
+        Double itemPrice;
+        // if user doesn't put a valid double, price is 0
+        try {
+            itemPrice = Double.parseDouble(price.getText().toString());
+        } catch (Exception e) {
+            itemPrice = 0.0;
+            Toast.makeText(getActivity(), "Price must be a number", Toast.LENGTH_SHORT).show();
+            return;
+
+        }
+        String itemDescription = description.getText().toString();
+
+        Item item = new Item(itemName, itemPrice, itemDescription);
+
+        if (item.addItem(username)) { // item wasnt added successfully
+            Toast.makeText(getActivity(), "Item created successfully", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getActivity(), "Item not created", Toast.LENGTH_SHORT).show();
+        }
     }
 }
