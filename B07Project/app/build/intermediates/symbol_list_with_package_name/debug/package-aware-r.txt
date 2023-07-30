@@ -3151,6 +3151,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id buttonAddItem
 id buttonCreateOwner
 id buttonCreateShopper
 id buttonLoginOwner
@@ -3293,6 +3294,9 @@ id info
 id invisible
 id inward
 id italic
+id itemDescription
+id itemName
+id itemPrice
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3497,6 +3501,7 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id storeHeading
 id storeName
 id stretch
 id submenuarrow
@@ -3516,6 +3521,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id test
 id text
 id text2
 id textEnd
