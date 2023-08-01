@@ -23,20 +23,31 @@ public class ActivityShopperView1 extends AppCompatActivity {
         Intent receiverIntent = getIntent(); //These lines receive the string from previous activity
         username = receiverIntent.getStringExtra("KEY_USERNAME"); //AND update username to match
 
+        // to send username to all shopper fragments
+        Bundle bundle = new Bundle();
+        bundle.putString("username", username); // key value I want to share w/ frags
+        Fragment shopperHomeFrag = new FragmentShopperHome();
+        Fragment shopperSearchFrag = new FragmentShopperSearch();
+        Fragment shopperCartFrag = new FragmentShopperCart();
+        // giving all frags the bundle of info I want to share
+        shopperHomeFrag.setArguments(bundle);
+        shopperSearchFrag.setArguments(bundle);
+        shopperCartFrag.setArguments(bundle);
+
         binding = ActivityShopperView1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        replaceFragment(new FragmentShopperHome());
+        replaceFragment(shopperHomeFrag);
         binding.bottomNavigationView2.setBackground(null);
 
         binding.bottomNavigationView2.setOnItemSelectedListener(item -> {
 
             if (item.getItemId() == R.id.home)
-                replaceFragment(new FragmentShopperHome());
+                replaceFragment(shopperHomeFrag);
             else if (item.getItemId() == R.id.search)
-                replaceFragment(new FragmentShopperSearch());
+                replaceFragment(shopperSearchFrag);
             else
-                replaceFragment(new FragmentShopperCart());
+                replaceFragment(shopperCartFrag);
 
             return true;
         });

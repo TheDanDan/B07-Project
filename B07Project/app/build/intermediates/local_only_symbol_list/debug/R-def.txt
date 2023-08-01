@@ -15,6 +15,7 @@ drawable shopper_home
 drawable shopper_search
 id bottomNavigationView
 id bottomNavigationView2
+id buttonAddItem
 id buttonCreateOwner
 id buttonCreateShopper
 id buttonLoginOwner
@@ -28,13 +29,18 @@ id editTextUsernameSignup
 id frame_layout
 id home
 id imageView7
+id itemDescription
+id itemName
+id itemPrice
 id ownerView
 id owner_account
 id owner_home
 id owner_orders
 id owner_shop
 id search
+id storeHeading
 id storeName
+id test
 id textView2
 id textView3
 id textViewErrorMsg

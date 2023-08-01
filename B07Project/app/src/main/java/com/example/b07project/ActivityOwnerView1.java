@@ -24,27 +24,41 @@ public class ActivityOwnerView1 extends AppCompatActivity {
         Intent receiverIntent = getIntent(); //These lines receive the string from previous activity
         username = receiverIntent.getStringExtra("KEY_USERNAME"); //AND update username to match
 
-//        TextView msgWelcome = (TextView) findViewById(R.id.textViewWelcomeTestOwner); //THIS LINE IS PURELY FOR TESTING
-//        msgWelcome.setText("Welcome " + username + "!");                              //FEEL FREE TO REMOVE LATER ! :-)
+        // TextView msgWelcome = (TextView) findViewById(R.id.textViewWelcomeTestOwner); //THIS LINE IS PURELY FOR TESTING
+        // msgWelcome.setText("Welcome " + username + "!");                              //FEEL FREE TO REMOVE LATER ! :-)
+
+        // to send username to all owner fragments
+        Bundle bundle = new Bundle();
+        bundle.putString("username", username); // key value I want to share w/ frags
+        Fragment ownerStoreFrag = new OwnerStoreFragment();
+        Fragment ownerHomeFrag = new OwnerHomeFragment();
+        Fragment ownerOrdersFrag = new OwnerOrdersFragment();
+        Fragment ownerAccountFrag = new OwnerAccountFragment();
+        // giving all frags the bundle of info I want to share
+        ownerStoreFrag.setArguments(bundle);
+        ownerHomeFrag.setArguments(bundle);
+        ownerAccountFrag.setArguments(bundle);
+        ownerOrdersFrag.setArguments(bundle);
+
 
         binding = ActivityOwnerView1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        replaceFragment(new OwnerHomeFragment());
+        replaceFragment(ownerHomeFrag);
         binding.bottomNavigationView.setBackground(null);
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
             if (item.getItemId() == R.id.owner_home)
-                replaceFragment(new OwnerHomeFragment());
+                replaceFragment(ownerHomeFrag);
             else if (item.getItemId() == R.id.owner_shop)
-                replaceFragment(new OwnerStoreFragment());
+                replaceFragment(ownerStoreFrag);
             else if (item.getItemId() == R.id.owner_orders)
-                replaceFragment(new OwnerOrdersFragment());
+                replaceFragment(ownerOrdersFrag);
             else if (item.getItemId() == R.id.owner_account)
-                replaceFragment(new OwnerAccountFragment());
+                replaceFragment(ownerAccountFrag);
             else
-                replaceFragment(new OwnerHomeFragment());
+                replaceFragment(ownerHomeFrag);
 
             return true;
         });

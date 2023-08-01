@@ -10,10 +10,13 @@ import android.view.ViewGroup;
 
 public class FragmentShopperCart extends Fragment {
 
+    String username;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        username = this.getArguments().getString("username");
         return inflater.inflate(R.layout.fragment_shopper_cart, container, false);
     }
 }
