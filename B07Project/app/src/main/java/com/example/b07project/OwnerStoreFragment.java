@@ -99,10 +99,8 @@ public class OwnerStoreFragment extends Fragment {
         try {
             itemPrice = Double.parseDouble(price.getText().toString());
         } catch (Exception e) {
-            itemPrice = 0.0;
             Toast.makeText(getActivity(), "Price must be a number", Toast.LENGTH_SHORT).show();
             return;
-
         }
         String itemDescription = description.getText().toString();
 

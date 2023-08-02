@@ -3151,6 +3151,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button3
 id buttonAddItem
 id buttonCreateOwner
 id buttonCreateShopper
@@ -3274,6 +3275,7 @@ id group_divider
 id grouping
 id groups
 id header_title
+id hello_world
 id hideable
 id home
 id homeAsUp
