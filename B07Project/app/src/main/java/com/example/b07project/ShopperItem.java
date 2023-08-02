@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -52,11 +53,27 @@ public class ShopperItem {
         this.status = status;
     }
 
-    public boolean removeFromCart(int quantity, String username) {
-        // only works if status is 0
-        // reduce this.quantity by quantity
-        // if 0 or neg, remove this object from database (from under Shoppers and Cart)
-        return false;
+    public void removeFromCart(String id, int quantity, String username) {
+        ref = FirebaseDatabase.getInstance().getReference("Shoppers");
+        DatabaseReference query = ref.child(username).child("cart").child(id); //get reference to related portion of DB
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) { //check our item exists (can be removed)
+                    int curQuantity = snapshot.child("quantity").getValue(Integer.class); //get current quantity
+
+                    if (curQuantity - quantity <= 0) { //if we are removing more than we have
+                        query.removeValue(); //remove item entirely
+                    } else { //if we have some left over then adjust the quantity
+                        query.child("quantity").setValue(curQuantity-quantity);
+                    }
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
     }
 
     public void addToCart(String id, int quantity, String username, String ownerUsername) {

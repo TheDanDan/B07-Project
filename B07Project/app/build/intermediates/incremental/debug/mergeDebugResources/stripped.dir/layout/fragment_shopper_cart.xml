@@ -17,11 +17,33 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
         android:layout_below="@id/hello_world"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        />
+        android:text="Add To Cart" />
+
+    <Button
+        android:id="@+id/btnRemoveItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:text="Remove From Cart" />
+
+    <TextView
+        android:id="@+id/textShopperCartError"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRemoveItem"
+        android:layout_alignStart="@+id/btnRemoveItem"
+        android:layout_alignEnd="@+id/btnRemoveItem"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="104dp"
+        android:text=""
+        android:textColor="#BF0707" />
 
 </RelativeLayout>

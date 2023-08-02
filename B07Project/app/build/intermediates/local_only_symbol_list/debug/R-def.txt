@@ -15,6 +15,7 @@ drawable shopper_home
 drawable shopper_search
 id bottomNavigationView
 id bottomNavigationView2
+id btnRemoveItem
 id button3
 id buttonAddItem
 id buttonCreateOwner
@@ -43,6 +44,7 @@ id search
 id storeHeading
 id storeName
 id test
+id textShopperCartError
 id textView2
 id textView3
 id textViewErrorMsg
