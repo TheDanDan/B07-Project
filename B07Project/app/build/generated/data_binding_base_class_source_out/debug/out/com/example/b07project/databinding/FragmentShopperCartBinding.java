@@ -21,16 +21,25 @@ public final class FragmentShopperCartBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Button btnRemoveItem;
+
+  @NonNull
   public final Button button3;
 
   @NonNull
   public final TextView helloWorld;
 
-  private FragmentShopperCartBinding(@NonNull RelativeLayout rootView, @NonNull Button button3,
-      @NonNull TextView helloWorld) {
+  @NonNull
+  public final TextView textShopperCartError;
+
+  private FragmentShopperCartBinding(@NonNull RelativeLayout rootView,
+      @NonNull Button btnRemoveItem, @NonNull Button button3, @NonNull TextView helloWorld,
+      @NonNull TextView textShopperCartError) {
     this.rootView = rootView;
+    this.btnRemoveItem = btnRemoveItem;
     this.button3 = button3;
     this.helloWorld = helloWorld;
+    this.textShopperCartError = textShopperCartError;
   }
 
   @Override
@@ -60,6 +69,12 @@ public final class FragmentShopperCartBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnRemoveItem;
+      Button btnRemoveItem = ViewBindings.findChildViewById(rootView, id);
+      if (btnRemoveItem == null) {
+        break missingId;
+      }
+
       id = R.id.button3;
       Button button3 = ViewBindings.findChildViewById(rootView, id);
       if (button3 == null) {
@@ -72,7 +87,14 @@ public final class FragmentShopperCartBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentShopperCartBinding((RelativeLayout) rootView, button3, helloWorld);
+      id = R.id.textShopperCartError;
+      TextView textShopperCartError = ViewBindings.findChildViewById(rootView, id);
+      if (textShopperCartError == null) {
+        break missingId;
+      }
+
+      return new FragmentShopperCartBinding((RelativeLayout) rootView, btnRemoveItem, button3,
+          helloWorld, textShopperCartError);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3151,6 +3151,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnRemoveItem
 id button3
 id buttonAddItem
 id buttonCreateOwner
@@ -3527,6 +3528,7 @@ id test
 id text
 id text2
 id textEnd
+id textShopperCartError
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
