@@ -29,10 +29,12 @@ public class ActivityShopperView1 extends AppCompatActivity {
         Fragment shopperHomeFrag = new FragmentShopperHome();
         Fragment shopperSearchFrag = new FragmentShopperSearch();
         Fragment shopperCartFrag = new FragmentShopperCart();
+        Fragment shopperOrderFrag = new FragmentShopperOrders();
         // giving all frags the bundle of info I want to share
         shopperHomeFrag.setArguments(bundle);
         shopperSearchFrag.setArguments(bundle);
         shopperCartFrag.setArguments(bundle);
+        shopperOrderFrag.setArguments(bundle);
 
         binding = ActivityShopperView1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -46,6 +48,8 @@ public class ActivityShopperView1 extends AppCompatActivity {
                 replaceFragment(shopperHomeFrag);
             else if (item.getItemId() == R.id.search)
                 replaceFragment(shopperSearchFrag);
+            else if (item.getItemId() == R.id.orders)
+                replaceFragment(shopperOrderFrag);
             else
                 replaceFragment(shopperCartFrag);
 

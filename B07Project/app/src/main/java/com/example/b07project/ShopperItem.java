@@ -23,6 +23,7 @@ import java.io.*;
 
 public class ShopperItem {
     private String id;
+    private String ownerUsername;
     private int quantity;
     private int status; // 0 for not yet ordered (i.e. in cart), 1 for ordered but not read, 2 for ready
     Button btn;
@@ -35,9 +36,10 @@ public class ShopperItem {
     public ShopperItem() {
     }
 
-    public ShopperItem(int quantity, String id) {
+    public ShopperItem(int quantity, String id, String ownerUsername) {
         this.quantity = quantity;
         this.id = id;
+        this.ownerUsername = ownerUsername;
         this.status = 0;
     }
 
@@ -47,6 +49,14 @@ public class ShopperItem {
 
     public int getStatus() {
         return status;
+    }
+
+    public String getOwnerUsername() {
+        return ownerUsername;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public void setStatus(int status) {
@@ -93,7 +103,7 @@ public class ShopperItem {
                     ref.child(username).child("cart").child(id).child("quantity").setValue(newQuantity);
 
                 } else {
-                    ShopperItem shopperItem = new ShopperItem(quantity, id);
+                    ShopperItem shopperItem = new ShopperItem(quantity, id, ownerUsername);
                     ref.child(username).child("cart").child(id).setValue(shopperItem);
                 }
             }

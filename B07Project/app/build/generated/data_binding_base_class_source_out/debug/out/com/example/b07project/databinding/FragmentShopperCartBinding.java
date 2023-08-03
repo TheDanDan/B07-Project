@@ -4,11 +4,11 @@ package com.example.b07project.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.b07project.R;
@@ -21,25 +21,16 @@ public final class FragmentShopperCartBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final Button btnRemoveItem;
+  public final RecyclerView recyclerViewShopperCart;
 
   @NonNull
-  public final Button button3;
-
-  @NonNull
-  public final TextView helloWorld;
-
-  @NonNull
-  public final TextView textShopperCartError;
+  public final TextView shoppingCart;
 
   private FragmentShopperCartBinding(@NonNull RelativeLayout rootView,
-      @NonNull Button btnRemoveItem, @NonNull Button button3, @NonNull TextView helloWorld,
-      @NonNull TextView textShopperCartError) {
+      @NonNull RecyclerView recyclerViewShopperCart, @NonNull TextView shoppingCart) {
     this.rootView = rootView;
-    this.btnRemoveItem = btnRemoveItem;
-    this.button3 = button3;
-    this.helloWorld = helloWorld;
-    this.textShopperCartError = textShopperCartError;
+    this.recyclerViewShopperCart = recyclerViewShopperCart;
+    this.shoppingCart = shoppingCart;
   }
 
   @Override
@@ -69,32 +60,20 @@ public final class FragmentShopperCartBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnRemoveItem;
-      Button btnRemoveItem = ViewBindings.findChildViewById(rootView, id);
-      if (btnRemoveItem == null) {
+      id = R.id.recycler_view_shopper_cart;
+      RecyclerView recyclerViewShopperCart = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewShopperCart == null) {
         break missingId;
       }
 
-      id = R.id.button3;
-      Button button3 = ViewBindings.findChildViewById(rootView, id);
-      if (button3 == null) {
+      id = R.id.shopping_cart;
+      TextView shoppingCart = ViewBindings.findChildViewById(rootView, id);
+      if (shoppingCart == null) {
         break missingId;
       }
 
-      id = R.id.hello_world;
-      TextView helloWorld = ViewBindings.findChildViewById(rootView, id);
-      if (helloWorld == null) {
-        break missingId;
-      }
-
-      id = R.id.textShopperCartError;
-      TextView textShopperCartError = ViewBindings.findChildViewById(rootView, id);
-      if (textShopperCartError == null) {
-        break missingId;
-      }
-
-      return new FragmentShopperCartBinding((RelativeLayout) rootView, btnRemoveItem, button3,
-          helloWorld, textShopperCartError);
+      return new FragmentShopperCartBinding((RelativeLayout) rootView, recyclerViewShopperCart,
+          shoppingCart);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

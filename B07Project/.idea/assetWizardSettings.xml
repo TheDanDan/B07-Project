@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/store/baseline_store_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/article/baseline_article_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="baseline_store_24" />
-                            <entry key="sourceFile" value="C:\Users\danny\OneDrive\Documents\GitHub\Not mine\B07-Project\B07Project" />
+                            <entry key="outputName" value="shopper_orders" />
+                            <entry key="sourceFile" value="/C:\Users\danny\OneDrive\Documents\GitHub\Not mine\B07-Project\B07Project" />
                           </map>
                         </option>
                       </PersistentState>

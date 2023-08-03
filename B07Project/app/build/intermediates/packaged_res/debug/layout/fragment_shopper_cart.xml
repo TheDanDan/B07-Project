@@ -5,45 +5,23 @@
     android:layout_height="match_parent"
     tools:context=".FragmentShopperCart">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/hello_world"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/shopper_cart"
-        />
 
-    <Button
-        android:id="@+id/button3"
+    <TextView
+        android:id="@+id/shopping_cart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/hello_world"
+        android:gravity="center_horizontal"
+        android:text="@string/shopper_cart"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_shopper_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        android:text="Add To Cart" />
-
-    <Button
-        android:id="@+id/btnRemoveItem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="30dp"
-        android:text="Remove From Cart" />
-
-    <TextView
-        android:id="@+id/textShopperCartError"
-        android:layout_width="246dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnRemoveItem"
-        android:layout_alignStart="@+id/btnRemoveItem"
-        android:layout_alignEnd="@+id/btnRemoveItem"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="104dp"
-        android:text=""
-        android:textColor="#BF0707" />
-
+        tools:listitem="@layout/shopper_cart_preview" />
 </RelativeLayout>
