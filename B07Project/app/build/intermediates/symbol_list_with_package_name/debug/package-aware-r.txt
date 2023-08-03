@@ -3236,6 +3236,7 @@ id east
 id edge
 id editTextPassword
 id editTextPasswordSignup
+id editTextStoreName
 id editTextUsername
 id editTextUsernameSignup
 id edit_query

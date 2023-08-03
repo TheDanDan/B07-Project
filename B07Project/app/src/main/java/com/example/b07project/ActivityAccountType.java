@@ -24,6 +24,7 @@ public class ActivityAccountType extends AppCompatActivity {
 
     EditText usernameInput;
     EditText passwordInput;
+    EditText storeNameInput;
     Button btnInsertData;
     DatabaseReference ref;
     FirebaseDatabase firebaseDatabase;
@@ -88,6 +89,7 @@ public class ActivityAccountType extends AppCompatActivity {
     public void onClickCreateOwner(View view) {
         usernameInput = (EditText) findViewById(R.id.editTextUsernameSignup);
         passwordInput = (EditText) findViewById(R.id.editTextPasswordSignup);
+        storeNameInput = (EditText) findViewById(R.id.editTextStoreName);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         ref = firebaseDatabase.getReference("Owners");
@@ -109,6 +111,7 @@ public class ActivityAccountType extends AppCompatActivity {
     private void insertOwner() {
         username = usernameInput.getText().toString();
         String password = passwordInput.getText().toString();
+        String storeName = storeNameInput.getText().toString();
 
         if (username.length() == 0 || password.length() == 0) {
             Toast.makeText(ActivityAccountType.this, "You must enter a username or password!", Toast.LENGTH_SHORT).show();
@@ -121,9 +124,11 @@ public class ActivityAccountType extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 ref.child(username).child("password").setValue(password);
+                ref.child(username).child("storeName").setValue(storeName);
                 Toast.makeText(ActivityAccountType.this, "Your account has been made!", Toast.LENGTH_SHORT).show();
                 usernameInput.getText().clear();
                 passwordInput.getText().clear();
+                storeNameInput.getText().clear();
                 openActivity(ActivityOwnerView1.class);
                 return;
             }

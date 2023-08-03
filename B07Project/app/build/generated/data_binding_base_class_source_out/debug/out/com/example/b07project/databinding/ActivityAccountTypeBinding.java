@@ -31,6 +31,9 @@ public final class ActivityAccountTypeBinding implements ViewBinding {
   public final EditText editTextPasswordSignup;
 
   @NonNull
+  public final EditText editTextStoreName;
+
+  @NonNull
   public final EditText editTextUsernameSignup;
 
   @NonNull
@@ -47,13 +50,15 @@ public final class ActivityAccountTypeBinding implements ViewBinding {
 
   private ActivityAccountTypeBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button buttonCreateOwner, @NonNull Button buttonCreateShopper,
-      @NonNull EditText editTextPasswordSignup, @NonNull EditText editTextUsernameSignup,
-      @NonNull ConstraintLayout textView2, @NonNull TextView textViewPasswordSignup,
-      @NonNull TextView textViewUsernameSignup, @NonNull TextView textViewWelcomeMsg) {
+      @NonNull EditText editTextPasswordSignup, @NonNull EditText editTextStoreName,
+      @NonNull EditText editTextUsernameSignup, @NonNull ConstraintLayout textView2,
+      @NonNull TextView textViewPasswordSignup, @NonNull TextView textViewUsernameSignup,
+      @NonNull TextView textViewWelcomeMsg) {
     this.rootView = rootView;
     this.buttonCreateOwner = buttonCreateOwner;
     this.buttonCreateShopper = buttonCreateShopper;
     this.editTextPasswordSignup = editTextPasswordSignup;
+    this.editTextStoreName = editTextStoreName;
     this.editTextUsernameSignup = editTextUsernameSignup;
     this.textView2 = textView2;
     this.textViewPasswordSignup = textViewPasswordSignup;
@@ -106,6 +111,12 @@ public final class ActivityAccountTypeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.editTextStoreName;
+      EditText editTextStoreName = ViewBindings.findChildViewById(rootView, id);
+      if (editTextStoreName == null) {
+        break missingId;
+      }
+
       id = R.id.editTextUsernameSignup;
       EditText editTextUsernameSignup = ViewBindings.findChildViewById(rootView, id);
       if (editTextUsernameSignup == null) {
@@ -133,8 +144,8 @@ public final class ActivityAccountTypeBinding implements ViewBinding {
       }
 
       return new ActivityAccountTypeBinding((ConstraintLayout) rootView, buttonCreateOwner,
-          buttonCreateShopper, editTextPasswordSignup, editTextUsernameSignup, textView2,
-          textViewPasswordSignup, textViewUsernameSignup, textViewWelcomeMsg);
+          buttonCreateShopper, editTextPasswordSignup, editTextStoreName, editTextUsernameSignup,
+          textView2, textViewPasswordSignup, textViewUsernameSignup, textViewWelcomeMsg);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

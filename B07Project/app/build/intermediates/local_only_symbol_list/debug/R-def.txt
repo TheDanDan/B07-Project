@@ -25,6 +25,7 @@ id buttonSignupPage
 id cart
 id editTextPassword
 id editTextPasswordSignup
+id editTextStoreName
 id editTextUsername
 id editTextUsernameSignup
 id frame_layout
