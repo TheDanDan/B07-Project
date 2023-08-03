@@ -1,7 +1,11 @@
 [
     {
-        "merged": "com.example.b07project.app-mergeDebugResources-33:/layout/fragment_shopper_orders.xml",
-        "source": "com.example.b07project.app-main-36:/layout/fragment_shopper_orders.xml"
+        "merged": "com.example.b07project.app-mergeDebugResources-33:/layout/shopper_cart_preview.xml",
+        "source": "com.example.b07project.app-main-36:/layout/shopper_cart_preview.xml"
+    },
+    {
+        "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-mergeDebugResources-33:/layout/shopper_store_preview.xml",
+        "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/layout/shopper_store_preview.xml"
     },
     {
         "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-mergeDebugResources-33:/layout/fragment_shopper_search.xml",
@@ -38,6 +42,10 @@
     {
         "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-mergeDebugResources-33:/layout/activity_account_type.xml",
         "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/layout/activity_account_type.xml"
+    },
+    {
+        "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-mergeDebugResources-33:/layout/fragment_shopper_orders.xml",
+        "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/layout/fragment_shopper_orders.xml"
     },
     {
         "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-mergeDebugResources-33:/layout/activity_login_page.xml",

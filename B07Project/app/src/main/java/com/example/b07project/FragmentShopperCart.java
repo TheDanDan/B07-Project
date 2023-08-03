@@ -44,7 +44,7 @@ public class FragmentShopperCart extends Fragment {
         recyclerView = view.findViewById(R.id.recycler_view_shopper_cart);
         db = FirebaseDatabase.getInstance("https://b07-project-3237a-default-rtdb.firebaseio.com/").getReference("Shoppers").child(username).child("cart");
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(false);
 
 
         list = new ArrayList<>();

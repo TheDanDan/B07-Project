@@ -49,6 +49,8 @@ public class MyAdapterShopper extends RecyclerView.Adapter<MyAdapterShopper.MyVi
 
         String ownerUsername = shopperItem.getOwnerUsername();
         String id = shopperItem.getId();
+        holder.item_id.setText(id);
+
         db = FirebaseDatabase.getInstance("https://b07-project-3237a-default-rtdb.firebaseio.com/").getReference("Owners").child(ownerUsername).child("products").child(id);
 
         db.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -74,13 +76,14 @@ public class MyAdapterShopper extends RecyclerView.Adapter<MyAdapterShopper.MyVi
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView item_name, item_total, item_quantity;
+        TextView item_name, item_total, item_quantity, item_id;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             item_name = itemView.findViewById(R.id.shopper_item_name_text);
             item_total = itemView.findViewById(R.id.shopper_item_total_text);
             item_quantity = itemView.findViewById(R.id.shopper_item_quantity_text);
+            item_id = itemView.findViewById(R.id.shopper_item_id_text);
         }
 
     }

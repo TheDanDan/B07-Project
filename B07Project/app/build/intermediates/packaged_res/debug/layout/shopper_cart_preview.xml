@@ -37,6 +37,29 @@
             android:layout_gravity="center_vertical">
 
             <TextView
+                android:id="@+id/shopper_item_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Item ID:"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/shopper_item_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
                 android:id="@+id/shopper_item_quantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,7 +109,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Edit" />
+                android:text="Edit"
+                app:iconSize="18dp" />
 
             <Button
                 android:id="@+id/shopper_remove_item"

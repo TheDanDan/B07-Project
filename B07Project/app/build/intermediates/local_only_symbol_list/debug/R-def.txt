@@ -40,8 +40,11 @@ id owner_home
 id owner_orders
 id owner_shop
 id recycler_view_shopper_cart
+id recycler_view_shopper_home
 id search
 id shopper_edit_cart
+id shopper_item_id
+id shopper_item_id_text
 id shopper_item_name_text
 id shopper_item_quantity
 id shopper_item_quantity_text
@@ -73,6 +76,7 @@ layout fragment_shopper_home
 layout fragment_shopper_orders
 layout fragment_shopper_search
 layout shopper_cart_preview
+layout shopper_store_preview
 menu bottom_nav_bar_owner
 menu bottom_nav_bar_shopper
 mipmap ic_launcher

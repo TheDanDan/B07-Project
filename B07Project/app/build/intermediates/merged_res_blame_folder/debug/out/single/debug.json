@@ -8,20 +8,24 @@
         "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/layout/fragment_owner_orders.xml"
     },
     {
-        "merged": "com.example.b07project.app-merged_res-34:/drawable_shopper_orders.xml.flat",
-        "source": "com.example.b07project.app-main-36:/drawable/shopper_orders.xml"
+        "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-merged_res-34:/layout_shopper_store_preview.xml.flat",
+        "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/layout/shopper_store_preview.xml"
     },
     {
         "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.b07project.app-merged_res-34:/layout_shopper_cart_preview.xml.flat",
+        "source": "com.example.b07project.app-main-36:/layout/shopper_cart_preview.xml"
+    },
+    {
         "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-merged_res-34:/drawable_shopper_search.xml.flat",
         "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/drawable/shopper_search.xml"
     },
     {
-        "merged": "com.example.b07project.app-merged_res-34:/menu_bottom_nav_bar_shopper.xml.flat",
-        "source": "com.example.b07project.app-main-36:/menu/bottom_nav_bar_shopper.xml"
+        "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-merged_res-34:/drawable_shopper_orders.xml.flat",
+        "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/drawable/shopper_orders.xml"
     },
     {
         "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-merged_res-34:/drawable_baseline_person_24.xml.flat",
@@ -48,12 +52,12 @@
         "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/layout/fragment_shopper_cart.xml"
     },
     {
-        "merged": "com.example.b07project.app-merged_res-34:/layout_fragment_shopper_orders.xml.flat",
-        "source": "com.example.b07project.app-main-36:/layout/fragment_shopper_orders.xml"
-    },
-    {
         "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-merged_res-34:/layout_fragment_shopper_search.xml.flat",
         "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/layout/fragment_shopper_search.xml"
+    },
+    {
+        "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-merged_res-34:/layout_fragment_shopper_orders.xml.flat",
+        "source": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-main-36:/layout/fragment_shopper_orders.xml"
     },
     {
         "merged": "/Users/alysa/.gradle/daemon/8.0/com.example.b07project.app-merged_res-34:/drawable_shopper_cart.xml.flat",

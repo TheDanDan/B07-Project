@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">B07 Project</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="shopper_home">this is the shopper\'s home test</string>
+    <string name="shopper_home">Home</string>
     <string name="shopper_search">this is the shopper\'s search page</string>
     <string name="shopper_cart">Shopping Cart</string>
     <!-- TODO: Remove or change this placeholder text -->

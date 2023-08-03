@@ -15,7 +15,7 @@
     <string name="google_storage_bucket" translatable="false">b07-project-3237a.appspot.com</string>
     <string name="project_id" translatable="false">b07-project-3237a</string>
     <string name="shopper_cart">Shopping Cart</string>
-    <string name="shopper_home">this is the shopper\'s home test</string>
+    <string name="shopper_home">Home</string>
     <string name="shopper_orders">this is a shopper\'s previous orders</string>
     <string name="shopper_search">this is the shopper\'s search page</string>
     <style name="Base.Theme.B07Project" parent="Theme.Material3.DayNight.NoActionBar">
