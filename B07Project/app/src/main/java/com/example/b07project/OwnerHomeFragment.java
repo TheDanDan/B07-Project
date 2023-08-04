@@ -3,10 +3,14 @@ package com.example.b07project;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +27,10 @@ public class OwnerHomeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    RecyclerView recyclerView;
+    ArrayList<Item> items;
+    OwnerHomeAdapter adapter;
 
     public OwnerHomeFragment() {
         // Required empty public constructor
@@ -49,19 +57,41 @@ public class OwnerHomeFragment extends Fragment {
     String username;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+    public void onCreate(Bundle savedInstance){
+        super.onCreate(savedInstance);
     }
+    private ArrayList<Item> getData()
+    {
+        ArrayList<Item> list = new ArrayList<>();
+        list.add(new Item("Item 1",
+                1,
+                "This is the first item"));
+        list.add(new Item("Item 2",
+                2,
+                "This is the second item"));
+        list.add(new Item("Item 3",
+                3,
+                "This is the third item"));
 
+        return list;
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        username = this.getArguments().getString("username");
-        return inflater.inflate(R.layout.fragment_owner_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_owner_home, container, false);
+
+        // Initialize RecyclerView
+        recyclerView = rootView.findViewById(R.id.owner_items);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        // Initialize item list (You can replace this with your actual data source)
+        items = getData();
+
+        // Set up the RecyclerView Adapter
+        adapter = new OwnerHomeAdapter(items);
+        recyclerView.setAdapter(adapter);
+
+        return rootView;
     }
 }
